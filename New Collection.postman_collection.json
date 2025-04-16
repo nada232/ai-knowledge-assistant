@@ -1,0 +1,1184 @@
+{
+	"info": {
+		"_postman_id": "f06a8b61-0b91-4891-a5c7-c91f9ad28645",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43946494"
+	},
+	"item": [
+		{
+			"name": "questions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0Nzk1MjQ0LCJpYXQiOjE3NDQ3OTE2NDQsImp0aSI6ImZiNTZlYTU5MjE2ODRmZjZhM2UyMTU5ZjE1ZjlmNDEwIiwidXNlcl9pZCI6MX0.-dSPmNZWsdPI_PxczMmdUFnEEcvPWCYT7yGubUZCcyI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"question\": \"How can AI improve healthcare?\"\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/questions/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"questions",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0Nzk1MjQ0LCJpYXQiOjE3NDQ3OTE2NDQsImp0aSI6ImZiNTZlYTU5MjE2ODRmZjZhM2UyMTU5ZjE1ZjlmNDEwIiwidXNlcl9pZCI6MX0.-dSPmNZWsdPI_PxczMmdUFnEEcvPWCYT7yGubUZCcyI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"question\": \"How can AI improve healthcare?\"\n}\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/questions/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"questions",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 16 Apr 2025 08:32:30 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.13.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1383"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 1,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 1,\n            \"asked_by\": {\n                \"id\": 1,\n                \"username\": \"admin\",\n                \"email\": \"\",\n                \"phone\": \"\"\n            },\n            \"question_text\": \"How can AI improve healthcare?\",\n            \"answer_text\": \"AI can improve healthcare in several ways:\\n\\n1. Diagnosis: AI can assist healthcare professionals in diagnosing diseases more accurately and quickly by analyzing medical images, test results, and patient data.\\n\\n2. Treatment: AI can recommend personalized treatment plans based on a patient's medical history, genetic information, and other relevant data. This can lead to more effective treatments and better patient outcomes.\\n\\n3. Predictive Analytics: AI can analyze large amounts of healthcare data to identify patterns and predict potential health issues. This can help in preventive care and early intervention.\\n\\n4. Telemedicine: AI-powered tools can enable remote monitoring of patients, virtual consultations, and personalized care plans, making healthcare more accessible and convenient.\\n\\n5. Drug Development: AI can expedite the drug discovery process by analyzing vast amounts of data to identify potential drug candidates and predict their efficacy and side effects.\\n\\nOverall, AI has the potential to revolutionize healthcare by improving diagnosis accuracy, treatment effectiveness, patient outcomes, and overall healthcare delivery.\",\n            \"asked_at\": \"2025-04-16T08:31:57.116579Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0Nzk2ODU5LCJpYXQiOjE3NDQ3OTMyNTksImp0aSI6IjMyOWY2ODUxZDM2NDQ3ZjU5NTE0MDFmMmYzMDc1MDZmIiwidXNlcl9pZCI6MX0.3W7JFSJOeJxBCK_dWbIZXQDOld5dSmZPSgjI4M7kXdM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"admin\",\n  \"password\": \"123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"token",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0Nzk2ODU5LCJpYXQiOjE3NDQ3OTMyNTksImp0aSI6IjMyOWY2ODUxZDM2NDQ3ZjU5NTE0MDFmMmYzMDc1MDZmIiwidXNlcl9pZCI6MX0.3W7JFSJOeJxBCK_dWbIZXQDOld5dSmZPSgjI4M7kXdM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"admin\",\n  \"password\": \"123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/token/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"token",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 16 Apr 2025 08:48:27 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.13.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "483"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0NDg3OTcwNywiaWF0IjoxNzQ0NzkzMzA3LCJqdGkiOiI2OGVhMjEwZTU5M2M0MGJmYjRmOTFkN2RjODZhYTNhYyIsInVzZXJfaWQiOjF9.3su-qmn18sjz_69vpQGKmdsRB5EqmTTye4t-P18X3_g\",\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0Nzk2OTA3LCJpYXQiOjE3NDQ3OTMzMDcsImp0aSI6IjFkZmUzNGI2MGQxNTRkMGY4MzE1ZGRkMGQ2ODY5N2IwIiwidXNlcl9pZCI6MX0.uxwHsx8sA6Trg2_S03xWtr2lx_FB-e-KeFBFb3hRt3c\"\n}"
+				}
+			]
+		},
+		{
+			"name": "search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/articles/?search=AI",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articles",
+						""
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "AI"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/articles/?search=AI",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"articles",
+								""
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "AI"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 16 Apr 2025 08:36:03 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.13.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1134"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 4,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 4,\n            \"title\": \"AI in Customer Service\",\n            \"content\": \"Companies are leveraging AI-powered chatbots and sentiment analysis to enhance customer support and engagement.\",\n            \"tags\": \"AI, Customer Support, Automation\",\n            \"created_at\": \"2025-04-16T08:27:42.968906Z\",\n            \"updated_at\": \"2025-04-16T08:27:42.968934Z\",\n            \"author\": 1\n        },\n        {\n            \"id\": 3,\n            \"title\": \"AI in Transportation\",\n            \"content\": \"Artificial Intelligence is revolutionizing transportation with self-driving cars, traffic prediction, and logistics optimization.\",\n            \"tags\": \"AI, Transportation, Smart Mobility\",\n            \"created_at\": \"2025-04-16T08:27:22.895970Z\",\n            \"updated_at\": \"2025-04-16T08:27:22.895991Z\",\n            \"author\": 1\n        },\n        {\n            \"id\": 2,\n            \"title\": \"AI in Agriculture\",\n            \"content\": \"Exploring how AI is helping farmers monitor crops and improve yield.\",\n            \"tags\": \"AI, Agriculture\",\n            \"created_at\": \"2025-04-16T08:26:38.765635Z\",\n            \"updated_at\": \"2025-04-16T08:26:38.765676Z\",\n            \"author\": 1\n        },\n        {\n            \"id\": 1,\n            \"title\": \"AI in Business\",\n            \"content\": \"How AI is transforming modern business processes.\",\n            \"tags\": \"AI, Business\",\n            \"created_at\": \"2025-04-16T08:22:39.548858Z\",\n            \"updated_at\": \"2025-04-16T08:22:39.548871Z\",\n            \"author\": 1\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "author",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/articles/?author=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articles",
+						""
+					],
+					"query": [
+						{
+							"key": "author",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/articles/?author=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"articles",
+								""
+							],
+							"query": [
+								{
+									"key": "author",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 16 Apr 2025 08:36:19 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.13.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1134"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 4,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 4,\n            \"title\": \"AI in Customer Service\",\n            \"content\": \"Companies are leveraging AI-powered chatbots and sentiment analysis to enhance customer support and engagement.\",\n            \"tags\": \"AI, Customer Support, Automation\",\n            \"created_at\": \"2025-04-16T08:27:42.968906Z\",\n            \"updated_at\": \"2025-04-16T08:27:42.968934Z\",\n            \"author\": 1\n        },\n        {\n            \"id\": 3,\n            \"title\": \"AI in Transportation\",\n            \"content\": \"Artificial Intelligence is revolutionizing transportation with self-driving cars, traffic prediction, and logistics optimization.\",\n            \"tags\": \"AI, Transportation, Smart Mobility\",\n            \"created_at\": \"2025-04-16T08:27:22.895970Z\",\n            \"updated_at\": \"2025-04-16T08:27:22.895991Z\",\n            \"author\": 1\n        },\n        {\n            \"id\": 2,\n            \"title\": \"AI in Agriculture\",\n            \"content\": \"Exploring how AI is helping farmers monitor crops and improve yield.\",\n            \"tags\": \"AI, Agriculture\",\n            \"created_at\": \"2025-04-16T08:26:38.765635Z\",\n            \"updated_at\": \"2025-04-16T08:26:38.765676Z\",\n            \"author\": 1\n        },\n        {\n            \"id\": 1,\n            \"title\": \"AI in Business\",\n            \"content\": \"How AI is transforming modern business processes.\",\n            \"tags\": \"AI, Business\",\n            \"created_at\": \"2025-04-16T08:22:39.548858Z\",\n            \"updated_at\": \"2025-04-16T08:22:39.548871Z\",\n            \"author\": 1\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "tags",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/articles/?tags=Finance",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"articles",
+								""
+							],
+							"query": [
+								{
+									"key": "tags",
+									"value": "Finance"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 16 Apr 2025 08:36:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.13.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1134"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 4,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 4,\n            \"title\": \"AI in Customer Service\",\n            \"content\": \"Companies are leveraging AI-powered chatbots and sentiment analysis to enhance customer support and engagement.\",\n            \"tags\": \"AI, Customer Support, Automation\",\n            \"created_at\": \"2025-04-16T08:27:42.968906Z\",\n            \"updated_at\": \"2025-04-16T08:27:42.968934Z\",\n            \"author\": 1\n        },\n        {\n            \"id\": 3,\n            \"title\": \"AI in Transportation\",\n            \"content\": \"Artificial Intelligence is revolutionizing transportation with self-driving cars, traffic prediction, and logistics optimization.\",\n            \"tags\": \"AI, Transportation, Smart Mobility\",\n            \"created_at\": \"2025-04-16T08:27:22.895970Z\",\n            \"updated_at\": \"2025-04-16T08:27:22.895991Z\",\n            \"author\": 1\n        },\n        {\n            \"id\": 2,\n            \"title\": \"AI in Agriculture\",\n            \"content\": \"Exploring how AI is helping farmers monitor crops and improve yield.\",\n            \"tags\": \"AI, Agriculture\",\n            \"created_at\": \"2025-04-16T08:26:38.765635Z\",\n            \"updated_at\": \"2025-04-16T08:26:38.765676Z\",\n            \"author\": 1\n        },\n        {\n            \"id\": 1,\n            \"title\": \"AI in Business\",\n            \"content\": \"How AI is transforming modern business processes.\",\n            \"tags\": \"AI, Business\",\n            \"created_at\": \"2025-04-16T08:22:39.548858Z\",\n            \"updated_at\": \"2025-04-16T08:22:39.548871Z\",\n            \"author\": 1\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "ordering",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/articles/?ordering=-created_at\n",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articles",
+						""
+					],
+					"query": [
+						{
+							"key": "ordering",
+							"value": "-created_at\n"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/articles/?ordering=-created_at\n",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"articles",
+								""
+							],
+							"query": [
+								{
+									"key": "ordering",
+									"value": "-created_at\n"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 16 Apr 2025 08:37:24 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.13.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1134"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 4,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 4,\n            \"title\": \"AI in Customer Service\",\n            \"content\": \"Companies are leveraging AI-powered chatbots and sentiment analysis to enhance customer support and engagement.\",\n            \"tags\": \"AI, Customer Support, Automation\",\n            \"created_at\": \"2025-04-16T08:27:42.968906Z\",\n            \"updated_at\": \"2025-04-16T08:27:42.968934Z\",\n            \"author\": 1\n        },\n        {\n            \"id\": 3,\n            \"title\": \"AI in Transportation\",\n            \"content\": \"Artificial Intelligence is revolutionizing transportation with self-driving cars, traffic prediction, and logistics optimization.\",\n            \"tags\": \"AI, Transportation, Smart Mobility\",\n            \"created_at\": \"2025-04-16T08:27:22.895970Z\",\n            \"updated_at\": \"2025-04-16T08:27:22.895991Z\",\n            \"author\": 1\n        },\n        {\n            \"id\": 2,\n            \"title\": \"AI in Agriculture\",\n            \"content\": \"Exploring how AI is helping farmers monitor crops and improve yield.\",\n            \"tags\": \"AI, Agriculture\",\n            \"created_at\": \"2025-04-16T08:26:38.765635Z\",\n            \"updated_at\": \"2025-04-16T08:26:38.765676Z\",\n            \"author\": 1\n        },\n        {\n            \"id\": 1,\n            \"title\": \"AI in Business\",\n            \"content\": \"How AI is transforming modern business processes.\",\n            \"tags\": \"AI, Business\",\n            \"created_at\": \"2025-04-16T08:22:39.548858Z\",\n            \"updated_at\": \"2025-04-16T08:22:39.548871Z\",\n            \"author\": 1\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "articles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/articles/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articles",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/articles/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"articles",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 16 Apr 2025 08:41:06 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.13.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1134"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 4,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 4,\n            \"title\": \"AI in Customer Service\",\n            \"content\": \"Companies are leveraging AI-powered chatbots and sentiment analysis to enhance customer support and engagement.\",\n            \"tags\": \"AI, Customer Support, Automation\",\n            \"created_at\": \"2025-04-16T08:27:42.968906Z\",\n            \"updated_at\": \"2025-04-16T08:27:42.968934Z\",\n            \"author\": 1\n        },\n        {\n            \"id\": 3,\n            \"title\": \"AI in Transportation\",\n            \"content\": \"Artificial Intelligence is revolutionizing transportation with self-driving cars, traffic prediction, and logistics optimization.\",\n            \"tags\": \"AI, Transportation, Smart Mobility\",\n            \"created_at\": \"2025-04-16T08:27:22.895970Z\",\n            \"updated_at\": \"2025-04-16T08:27:22.895991Z\",\n            \"author\": 1\n        },\n        {\n            \"id\": 2,\n            \"title\": \"AI in Agriculture\",\n            \"content\": \"Exploring how AI is helping farmers monitor crops and improve yield.\",\n            \"tags\": \"AI, Agriculture\",\n            \"created_at\": \"2025-04-16T08:26:38.765635Z\",\n            \"updated_at\": \"2025-04-16T08:26:38.765676Z\",\n            \"author\": 1\n        },\n        {\n            \"id\": 1,\n            \"title\": \"AI in Business\",\n            \"content\": \"How AI is transforming modern business processes.\",\n            \"tags\": \"AI, Business\",\n            \"created_at\": \"2025-04-16T08:22:39.548858Z\",\n            \"updated_at\": \"2025-04-16T08:22:39.548871Z\",\n            \"author\": 1\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "page_size",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/articles/?page_size=2\n",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articles",
+						""
+					],
+					"query": [
+						{
+							"key": "page_size",
+							"value": "2\n"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/articles/?page_size=2\n",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"articles",
+								""
+							],
+							"query": [
+								{
+									"key": "page_size",
+									"value": "2\n"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 16 Apr 2025 08:43:55 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.13.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "734"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 4,\n    \"next\": \"http://127.0.0.1:8000/api/articles/?page=2&page_size=2%0A\",\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 4,\n            \"title\": \"AI in Customer Service\",\n            \"content\": \"Companies are leveraging AI-powered chatbots and sentiment analysis to enhance customer support and engagement.\",\n            \"tags\": \"AI, Customer Support, Automation\",\n            \"created_at\": \"2025-04-16T08:27:42.968906Z\",\n            \"updated_at\": \"2025-04-16T08:27:42.968934Z\",\n            \"author\": 1\n        },\n        {\n            \"id\": 3,\n            \"title\": \"AI in Transportation\",\n            \"content\": \"Artificial Intelligence is revolutionizing transportation with self-driving cars, traffic prediction, and logistics optimization.\",\n            \"tags\": \"AI, Transportation, Smart Mobility\",\n            \"created_at\": \"2025-04-16T08:27:22.895970Z\",\n            \"updated_at\": \"2025-04-16T08:27:22.895991Z\",\n            \"author\": 1\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "ask",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0Nzk2ODU5LCJpYXQiOjE3NDQ3OTMyNTksImp0aSI6IjMyOWY2ODUxZDM2NDQ3ZjU5NTE0MDFmMmYzMDc1MDZmIiwidXNlcl9pZCI6MX0.3W7JFSJOeJxBCK_dWbIZXQDOld5dSmZPSgjI4M7kXdM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"question\": \"How can AI improve healthcare?\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/ask/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"ask",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0ODE0NDQ0LCJpYXQiOjE3NDQ4MTA4NDQsImp0aSI6IjQ3NmMyYTFhZmFkOTRkYTg5MGY3OGRmMzRlMzcyNjMxIiwidXNlcl9pZCI6MX0.UK1koym--FAvUXJoqH6Zg1lUh9eW7qT6Z9b9ewu4Dc8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"Updated AI Article\",\n  \"content\": \"This article has been updated to reflect new AI trends.\",\n  \"tags\": \"AI, Tech\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/articles/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articles",
+						"1",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0ODE0NDQ0LCJpYXQiOjE3NDQ4MTA4NDQsImp0aSI6IjQ3NmMyYTFhZmFkOTRkYTg5MGY3OGRmMzRlMzcyNjMxIiwidXNlcl9pZCI6MX0.UK1koym--FAvUXJoqH6Zg1lUh9eW7qT6Z9b9ewu4Dc8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Updated AI Article\",\n  \"content\": \"This article has been updated to reflect new AI trends.\",\n  \"tags\": \"AI, Tech\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/articles/1/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"articles",
+								"1",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 16 Apr 2025 13:41:08 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.13.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "220"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"title\": \"Updated AI Article\",\n    \"content\": \"This article has been updated to reflect new AI trends.\",\n    \"tags\": \"AI, Tech\",\n    \"created_at\": \"2025-04-16T08:22:39.548858Z\",\n    \"updated_at\": \"2025-04-16T13:41:08.618284Z\",\n    \"author\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0ODE0NDQ0LCJpYXQiOjE3NDQ4MTA4NDQsImp0aSI6IjQ3NmMyYTFhZmFkOTRkYTg5MGY3OGRmMzRlMzcyNjMxIiwidXNlcl9pZCI6MX0.UK1koym--FAvUXJoqH6Zg1lUh9eW7qT6Z9b9ewu4Dc8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/articles/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articles",
+						"1",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0ODE0NDQ0LCJpYXQiOjE3NDQ4MTA4NDQsImp0aSI6IjQ3NmMyYTFhZmFkOTRkYTg5MGY3OGRmMzRlMzcyNjMxIiwidXNlcl9pZCI6MX0.UK1koym--FAvUXJoqH6Zg1lUh9eW7qT6Z9b9ewu4Dc8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/articles/1/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"articles",
+								"1",
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 16 Apr 2025 13:46:26 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.13.1"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
